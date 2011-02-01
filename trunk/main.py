@@ -9,7 +9,7 @@ class MyHandler(webapp.RequestHandler):
     def get(self):
         self.response.out.write(template.render('main.html', {}))
         self.response.out.write("""
-        <br><div style="font-size:medium">-Alex Leutenegger 2011,
+        <br><div style="font-size:medium">Alex Leutenegger 2011
         <a href="http://code.google.com/p/truth-table-gae/">Source</a></div>
         </body></html>""")
 
