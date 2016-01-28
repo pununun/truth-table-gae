@@ -24,8 +24,7 @@ def truth_table(f):
     for c in mod_f:
         vars[c] = Variable(c)
 
-    # One last horrible string hack. Replace all instances of uppercase letters
-    # with vars['LETTER']
+# Replace all instances of uppercase letters with vars['LETTER']
     for l in uppercase:
         f = f.replace(l, 'vars[\'%s\']' % l)
     
