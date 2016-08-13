@@ -33,6 +33,9 @@ def truth_table(f):
     # lack of operator precedence.
     # eg. A&B->C is evaluated as the wff A&(B->C) due to python evaluating >>
     # before &.
+    #
+    # UPDATE 8/12/2016:
+    # I've always known this code is insane, but it worked at the time... :)
     try:
         f = eval(f)
     except SyntaxError:
